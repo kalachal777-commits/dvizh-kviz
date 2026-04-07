@@ -151,6 +151,7 @@ ul, ol {
     z-index: 1000;
     padding: 16px 0;
     transition: var(--transition-base);
+	
 }
 
 .header.scrolled {
@@ -163,6 +164,7 @@ ul, ol {
     display: flex;
     align-items: center;
     justify-content: space-between;
+	
 }
 
 .logo {
@@ -372,7 +374,7 @@ ul, ol {
 .hero-content {
     text-align: center;
     max-width: 800px;
-    margin: 40px;
+    margin: 80px;
 }
 
 .hero-logo {
@@ -1283,7 +1285,7 @@ ul, ol {
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .footer-logo span {
