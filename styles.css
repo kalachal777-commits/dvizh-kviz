@@ -173,7 +173,7 @@ ul, ol {
 }
 
 .logo-image {
-    height: 100px;
+    height: 120px;
     width: auto;
     animation: pulse-glow 3s ease-in-out infinite;
 }
@@ -380,10 +380,10 @@ ul, ol {
 }
 
 .hero-logo-icon {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 100px;
     margin: 0 auto;
-    animation: logo-float 4s ease-in-out infinite;
+    animation: logo-float 2s ease-in-out infinite;
 }
 
 @keyframes logo-float {
@@ -393,10 +393,10 @@ ul, ol {
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: clamp(2.5rem, 8vw, 5rem);
-    font-weight: 900;
+    font-size: clamp(2.1rem, 6vw, 3rem);
+    font-weight: 600;
     line-height: 1.1;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .title-gradient {
@@ -407,9 +407,9 @@ ul, ol {
 }
 
 .hero-slogan {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     color: var(--text-secondary);
-    margin-bottom: 48px;
+    margin-bottom: 30px;
 }
 
 /* ==========================================
@@ -424,7 +424,7 @@ ul, ol {
     color: var(--text-secondary);
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .countdown {
@@ -1250,10 +1250,9 @@ ul, ol {
    Footer
    ========================================== */
 .footer {
-	width: 100%;
-    background: var(--bg-card);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 60px 0 24px;
+    width: 100%;
+    background: #0f0f0f;
+    padding: 40px 20px;
 }
 
 .footer-wrapper {
@@ -1266,20 +1265,25 @@ ul, ol {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
     flex-wrap: wrap;
-    gap: 40px;
-    margin-bottom: 40px;
+    gap: 30px;
 }
 
 .footer-brand {
-    max-width: 250px;
+    max-width: 200px;
+}
+.logo-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
 }
 
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
+    gap: 10px;
 }
 
 .footer-logo span {
@@ -1291,6 +1295,7 @@ ul, ol {
 .footer-tagline {
     font-size: 0.9rem;
     color: var(--text-secondary);
+	
 }
 
 .footer-links {
@@ -1304,8 +1309,11 @@ ul, ol {
     transition: var(--transition-fast);
 }
 
-.footer-links a:hover {
-    color: var(--primary);
+.footer-links,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .footer-social {
@@ -1331,9 +1339,9 @@ ul, ol {
 }
 
 .footer-bottom {
+    margin-top: 30px;
     text-align: center;
-    padding-top: 24px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    opacity: 0.6;
 }
 
 .footer-bottom p {
