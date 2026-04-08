@@ -30,6 +30,54 @@
     --transition-slow: 500ms ease;
 }
 
+/* Фон затемнения */
+.modal {
+  display: none; /* скрыто по умолчанию */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Само окно */
+.modal-content {
+  background: #111;
+  color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 30px #f56e00;
+}
+
+/* Кнопка закрытия */
+.close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Кнопка */
+.rules-btn {
+  background: #f56e00;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.rules-btn:hover {
+  opacity: 0.9;
+}
+
 /* ==========================================
    Reset & Base
    ========================================== */
