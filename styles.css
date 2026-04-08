@@ -30,6 +30,43 @@
     --transition-slow: 500ms ease;
 }
 
+.next-game-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.next-game-left {
+    flex: 1;
+}
+
+.next-game-image img {
+    width: 220px;
+    border-radius: 12px;
+}
+
+/* КНОПКИ */
+.next-game-buttons {
+    display: flex;
+    gap: 15px; /* ВОТ ОТСТУП МЕЖДУ КНОПКАМИ */
+    margin-top: 20px;
+}
+📍 Куда вставлять
+HTML → вставь вместо своего блока .next-game-card
+CSS → в файл style.css или в <style> в <head>
+⚡ Важно
+Картинку положи в папку img/
+Назови её game.jpg (или поменяй путь в src)
+
+Если хочешь — могу сделать тебе:
+
+адаптацию под телефон 📱
+красивый hover-эффект
+или анимацию появления блока
+
+Скажи 👍
+
 /* Фон затемнения */
 .modal {
   display: none; /* скрыто по умолчанию */
