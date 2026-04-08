@@ -57,8 +57,8 @@ document.querySelectorAll('.mobile-nav-link').forEach(link => {
 // ==========================================
 // Countdown Timer
 // ==========================================
-// Set next game date (Friday, April 10, 2026 at 19:00)
-const nextGameDate = new Date('2026-04-10T19:00:00');
+// Set next game date (Saturday, Jule 04, 2026 at 16:00)
+const nextGameDate = new Date('2026-07-04T16:00:00');
 
 function updateCountdown() {
     const now = new Date();
