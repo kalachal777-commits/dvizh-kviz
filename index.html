@@ -222,6 +222,10 @@
                             </div>
 				
                         </div>
+										<button onclick="openModal()" class="btn btn-primary">
+  <span>Правила игры</span>
+
+</button>
                         <a href="contacts2.html" class="btn btn-primary">
                             <span>Записаться на игру</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -315,5 +319,42 @@
     </footer>
 
     <script src="main.js"></script>
+	<script src="main.js"></script>
+<!-- POPUP -->
+<div id="quizModal" class="modal">
+  <div class="modal-content">
+    
+    <!-- Кнопка закрытия -->
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <!-- Заголовок -->
+    <h2>Правила игры</h2>
+
+    <!-- Контент -->
+    <p>🧠 6 раундов по 10 вопросов</p>
+    <p>🎵 Музыкальные задания</p>
+    <p>🍻 Перерывы между раундами</p>
+    <p>🏆 Призы победителям</p>
+    <p>👥 Команды от 2 до 8 человек</p>
+
+  </div>
+</div>
+	<script>
+function openModal() {
+  document.getElementById("quizModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("quizModal").style.display = "none";
+}
+
+/* Закрытие при клике вне окна */
+window.onclick = function(event) {
+  let modal = document.getElementById("quizModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>
