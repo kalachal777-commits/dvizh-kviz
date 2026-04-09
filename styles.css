@@ -280,6 +280,7 @@ ul, ol {
     color: var(--text-secondary);
     transition: var(--transition-fast);
     position: relative;
+	margin-bottom: 20px;
 }
 
 .nav-link::after {
