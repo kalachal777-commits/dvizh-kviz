@@ -1139,6 +1139,11 @@ ul, ol {
     color: white;
 }
 
+.social-btn-max {
+    background:linear-gradient(135deg, #00D4FF, #7B68EE, #8B00FF);
+    color: white;
+}
+
 .social-btn:hover {
     transform: translateY(-2px);
     filter: brightness(1.1);
