@@ -715,6 +715,18 @@ ul, ol {
     transform: none !important;
 }
 
+.game-card-img {
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-lg);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;       /* задай фикс ширину */
+    height: 100%;       /* или фикс высоту (например 200px) */
+}
+
 .game-card::before {
     content: '';
     position: absolute;
