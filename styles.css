@@ -711,6 +711,8 @@ ul, ol {
     transition: var(--transition-base);
     position: relative;
     overflow: hidden;
+	opacity: 1 !important;
+    transform: none !important;
 }
 
 .game-card::before {
@@ -896,6 +898,8 @@ ul, ol {
     padding: 16px;
     opacity: 0;
     transition: var(--transition-base);
+	opacity: 1 !important;
+    transform: none !important;
 }
 
 .gallery-item:hover .gallery-overlay {
