@@ -729,6 +729,14 @@ ul, ol {
     width: 100%;
     height: 40%;       /* или фикс высоту (например 200px) */
 }
+
+.game-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ключевая строка */
+    display: block;
+}
+
 .game-card::before {
     content: '';
     position: absolute;
