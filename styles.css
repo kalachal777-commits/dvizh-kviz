@@ -30,15 +30,7 @@
     --transition-slow: 500ms ease;
 }
 
-html {
-    font-size: 14px;
-}
 
-@media (max-width: 768px) {
-    html {
-        font-size: 13px;
-    }
-}
 
 .next-game-content {
     display: flex;
