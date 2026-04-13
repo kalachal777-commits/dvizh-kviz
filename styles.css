@@ -1604,3 +1604,7 @@ ul, ol {
     margin-top: auto; /* прижимает кнопку вниз */
     width: 100%;
 }
+
+.game-card {
+    overflow: hidden;
+}
