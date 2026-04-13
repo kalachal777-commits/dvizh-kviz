@@ -5,7 +5,7 @@
     --primary: #f56e00;
     --secondary: #8208d4;
     --accent: #FFE156;
-    --bg-dark: #2F4F4F;
+    --bg-dark: #0D0D0F;
     --bg-card: #1A1A1F;
     --bg-card-hover: #222228;
     --text-primary: #FFFFFF;
@@ -718,7 +718,7 @@ ul, ol {
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: var(--radius-lg);
     padding: 24px;
-	 gap: 16px;
+	 gap: 2px;
     display: flex !important;
     flex-direction: column !important;
     transition: var(--transition-base);
