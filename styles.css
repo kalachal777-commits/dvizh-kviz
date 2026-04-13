@@ -1587,3 +1587,20 @@ ul, ol {
         justify-content: center;
     }
 }
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.game-card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.btn-full {
+    margin-top: auto; /* прижимает кнопку вниз */
+    width: 100%;
+}
