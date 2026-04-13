@@ -727,7 +727,7 @@ ul, ol {
     overflow: hidden;
 
     width: 100%;
-    height: 400px;       /* или фикс высоту (например 200px) */
+    height: 40%;       /* или фикс высоту (например 200px) */
 }
 .game-card::before {
     content: '';
