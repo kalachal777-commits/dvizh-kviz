@@ -28,6 +28,11 @@
                 <a href="schedule.html" class="nav-link active">Расписание</a>
                 <a href="photos.html" class="nav-link">Фото</a>
                 <a href="contacts.html" class="nav-link">Контакты</a>
+		<a class="nav-link">г. Нижний Новгород</a>
+		<a href="contacts2.html" class="btn btn-primary">
+                            <span>Записаться на игру</span>
+                            
+                        </a>
             </nav>
             <button class="burger" id="burger" aria-label="Меню">
                 <span></span>
@@ -44,10 +49,19 @@
             <a href="schedule.html" class="mobile-nav-link active">Расписание</a>
             <a href="photos.html" class="mobile-nav-link">Фото</a>
             <a href="contacts.html" class="mobile-nav-link">Контакты</a>
+		<a class="nav-link">г. Нижний Новгород</a>
+		<a href="contacts2.html" class="btn btn-primary">
+                            <span>Записаться на игру</span>
+                            
+                        </a>
         </nav>
     </div>
 
     <main class="page-content">
+
+
+
+
         <!-- Page Header -->
         <section class="page-header">
             <div class="container">
@@ -58,19 +72,25 @@
             </div>
         </section>
 
-        <!-- Games Schedule -->
+       <!-- Games Schedule -->
         <section class="schedule-section">
             <div class="container">
-                <div class="games-grid">
 
-                   <!-- Game Card 1 - Featured -->
+		<!-- Фото+Игра -->
+
+		
+
+                <div class="games-grid">
+		
+
+                    <!-- Game Card 1 - Featured -->
 			<div class="game-card game-card-featured">
 			<div class="game-card-img">
-				<img src="game1.jpg" >
+				<img src="game1.jpg">
 			</div>	
 
-                    <div class="game-card game-card-featured">
-                        
+			
+
 		<div class="game-card-badge">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
@@ -132,12 +152,12 @@
 
 
                             </div>
-                            <a href="contacts2.html" class="btn btn-primary btn-full">
+                            <a class="btn btn-primary btn-full" onclick="openFormModal()">
                                 <span>Записаться</span>
                                 
                             </a>
                         </div>
-                    </div></div>
+                    </div>
 
                   
 
@@ -157,7 +177,7 @@
 				<button onclick="openModal()" class="nav-link active">
                    		 Подробнее об игрe
                 		</button>
-							<p class="game-card-description">Игра по сериалам.</p>
+				<p class="game-card-description">Игра по сериалам.</p>
                             <p class="game-card-description">От тайн Смолвиля до загадочных событий в Хоукинсе</p>
                             <div class="game-card-meta">
 
@@ -206,130 +226,15 @@
                     </div>
 		</div>
 
-                    <!-- Game Card 3 -->
-                    <div class="game-card">
-                        <div class="game-card-date">
-                            <span class="date-day">24</span>
-                            <span class="date-month">апреля</span>
-                        </div>
-                        <div class="game-card-content">
-                            <h3 class="game-card-title">Наука и факты: А что, если...</h3>
-                            <p class="game-card-description">Интересные вопросы о мире вокруг. Проверим вашу эрудицию!</p>
-                            <div class="game-card-meta">
-                                <div class="game-meta-item">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <polyline points="12 6 12 12 16 14"/>
-                                    </svg>
-                                    <span>19:00</span>
-                                </div>
-                                <div class="game-meta-item">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                        <circle cx="9" cy="7" r="4"/>
-                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                                    </svg>
-                                    <span>24 места</span>
-                                </div>
-                            </div>
-                            <a href="contacts.html" class="btn btn-secondary btn-full">Записаться</a>
-                        </div>
-                    </div>
 
-                    <!-- Game Card 4 -->
-                    <div class="game-card">
-                        <div class="game-card-date">
-                            <span class="date-day">1</span>
-                            <span class="date-month">мая</span>
-                        </div>
-                        <div class="game-card-content">
-                            <h3 class="game-card-title">География: Путешествия без чемодана</h3>
-                            <p class="game-card-description">Угадайте страны, города и достопримечательности по фото и фактам.</p>
-                            <div class="game-card-meta">
-                                <div class="game-meta-item">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <polyline points="12 6 12 12 16 14"/>
-                                    </svg>
-                                    <span>18:00</span>
-                                </div>
-                                <div class="game-meta-item">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                        <circle cx="9" cy="7" r="4"/>
-                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                                    </svg>
-                                    <span>24 места</span>
-                                </div>
-                            </div>
-                            <a href="contacts.html" class="btn btn-secondary btn-full">Записаться</a>
-                        </div>
-                    </div>
 
-                    <!-- Game Card 5 -->
-                    <div class="game-card">
-                        <div class="game-card-date">
-                            <span class="date-day">8</span>
-                            <span class="date-month">мая</span>
-                        </div>
-                        <div class="game-card-content">
-                            <h3 class="game-card-title">История: Великие события России</h3>
-                            <p class="game-card-description">Ключевые моменты отечественной истории в вопросах и ответах.</p>
-                            <div class="game-card-meta">
-                                <div class="game-meta-item">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <polyline points="12 6 12 12 16 14"/>
-                                    </svg>
-                                    <span>19:00</span>
-                                </div>
-                                <div class="game-meta-item">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                        <circle cx="9" cy="7" r="4"/>
-                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                                    </svg>
-                                    <span>24 места</span>
-                                </div>
-                            </div>
-                            <a href="contacts.html" class="btn btn-secondary btn-full">Записаться</a>
-                        </div>
-                    </div>
 
-                    <!-- Game Card 6 -->
-                    <div class="game-card">
-                        <div class="game-card-date">
-                            <span class="date-day">15</span>
-                            <span class="date-month">мая</span>
-                        </div>
-                        <div class="game-card-content">
-                            <h3 class="game-card-title">Спорт: Олимпиады and Champions League</h3>
-                            <p class="game-card-description">Для тех, кто не пропускает ни одного матча и следит за рекордами.</p>
-                            <div class="game-card-meta">
-                                <div class="game-meta-item">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <polyline points="12 6 12 12 16 14"/>
-                                    </svg>
-                                    <span>19:00</span>
-                                </div>
-                                <div class="game-meta-item">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                        <circle cx="9" cy="7" r="4"/>
-                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                                    </svg>
-                                    <span>24 места</span>
-                                </div>
-                            </div>
-                            <a href="contacts.html" class="btn btn-secondary btn-full">Записаться</a>
-                        </div>
-                    </div>
-                </div>
+                 
+                
+
+                  
+
+                    
 
                 <!-- Info Block -->
                 <div class="info-block">
@@ -419,7 +324,7 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+ 
 	
 <!-- POPUP -->
 <div id="quizModal" class="modal">
@@ -457,5 +362,99 @@ window.onclick = function(event) {
   }
 }
 </script>
+
+<div class="modal" id="formModal">
+    <div class="modal-content">
+
+        <span class="modal-close" onclick="closeFormModal()">×</span>
+
+        <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                         
+                            <p class="form-subtitle">Заполните форму, и мы свяжемся с вами для подтверждения участия</p>
+                            
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" placeholder="Александр" required>
+                                <span class="form-error" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+                                <span class="form-error" id="phoneError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="game">Выберите игру</label>
+                                <select id="game" name="game" required>
+                                    <option value="">Выберите дату и тему</option>
+                                    <option value="1">10 апреля — Музыкальный квиз: Хиты 90-х</option>
+                                    <option value="2">17 апреля — Кино: От Форреста Гампа до Матрицы</option>
+                                    <option value="3">24 апреля — Наука и факты: А что, если...</option>
+                                    <option value="4">1 мая — География: Путешествия без чемодана</option>
+                                    <option value="5">8 мая — История: Великие события России</option>
+                                    <option value="6">15 мая — Спорт: Олимпиады и Champions League</option>
+                                </select>
+                                <span class="form-error" id="gameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="team">Название команды</label>
+                                <input type="text" id="team" name="team" placeholder="Команда друзей">
+                                <span class="form-hint">Оставьте пустым, если играете одни</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Комментарий</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Количество участников, особые пожелания..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Отправить заявку</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                                </svg>
+                            </button>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div class="form-success" id="formSuccess">
+                            <div class="success-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <h3>Заявка отправлена!</h3>
+                            <p>Мы свяжемся с вами в ближайшее время для подтверждения бронирования.</p>
+                            <button class="btn btn-secondary" id="resetForm">Отправить ещё одну заявку</button>
+                        </div>
+                    </div>
+
+    </div>
+</div>
+
+<script>
+function openFormModal() {
+    document.getElementById("formModal").style.display = "flex";
+}
+
+function closeFormModal() {
+    document.getElementById("formModal").style.display = "none";
+}
+
+// Закрытие при клике вне окна
+window.onclick = function(event) {
+    let modal = document.getElementById("formModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<script src="main.js"></script>
+
 </body>
 </html>
