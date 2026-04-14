@@ -1632,26 +1632,38 @@ opacity: 1 !important;
     height: 100%;
     
     background: rgba(0, 0, 0, 0.7);
-    
+    padding: 10px; 
     justify-content: center;
     align-items: center;
 }
 
 .modal-content {
     background: #111;
-    padding: 25px;
+    padding: 20px;
     border-radius: 12px;
-    width: 90%;
+
+    width: 100%;
     max-width: 500px;
+
+    max-height: 90vh; /* 🔥 ключевое */
+    overflow-y: auto; /* 🔥 прокрутка внутри */
 
     position: relative;
 }
 
 .modal-close {
     position: absolute;
-    right: 15px;
-    top: 10px;
+    right: 12px;
+    top: 12px;
     font-size: 28px;
     cursor: pointer;
     color: white;
+    z-index: 10;
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 5px;
+        max-height: 105vh;
+    }
 }
