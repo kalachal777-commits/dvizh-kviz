@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты — Движ Квиз</title>
+    <title>Фото с игр — Движ Квиз</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Unbounded:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -24,11 +24,15 @@
                 <img src="logo.png" alt="Движ Квиз" class="logo-image">
             </a>
             <nav class="nav" id="nav">
-                <a href="index.html" class="nav-link">Главная</a>
+                <a href="index.html" class="nav-link active">Главная</a>
                 <a href="schedule.html" class="nav-link">Расписание</a>
                 <a href="photos.html" class="nav-link">Фото</a>
-                <a href="contacts.html" class="nav-link active">Запись на игру</a>
-		<a class="nav-link">Нижний Новгород</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+		<a class="nav-link">г. Нижний Новгород</a>
+		<a href="contacts2.html" class="btn btn-primary">
+                            <span>Записаться на игру</span>
+                            
+                        </a>
             </nav>
             <button class="burger" id="burger" aria-label="Меню">
                 <span></span>
@@ -41,10 +45,14 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <nav class="mobile-nav">
-            <a href="index.html" class="mobile-nav-link">Главная</a>
+            <a href="index.html" class="mobile-nav-link active">Главная</a>
             <a href="schedule.html" class="mobile-nav-link">Расписание</a>
             <a href="photos.html" class="mobile-nav-link">Фото</a>
-            <a class="mobile-nav-link active">Контакты</a>
+            <a href="contacts.html" class="mobile-nav-link">Контакты</a>
+		<a class="nav-link">г. Нижний Новгород</a>
+		<a class="btn btn-primary btn-full" onclick="openFormModal()">
+                                <span>Записаться</span>
+                 </a>
         </nav>
     </div>
 
@@ -132,28 +140,32 @@
                     </div>
                 
  
-                    <div class="contact-info">
-<div class="contact-socials">
+                    <div class="contact-socials">
                             <h3>Мы в соцсетях</h3>
                             <div class="social-links">
                                 <a href="#" class="social-btn social-btn-tg">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <svg width="40" height="20" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                                     </svg>
-                                    Telegram
+                                    Телеграм
                                 </a>
                                 <a href="#" class="social-btn social-btn-vk">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <svg width="40" height="20" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4 8.387 4 7.897c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.372 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.814-.542 1.27-1.422 2.18-3.61 2.18-3.61.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.474-.085.716-.576.716z"/>
                                     </svg>
-                                    VK
+                                    Вконтакте
                                 </a>
                                 <a href="#" class="social-btn social-btn-wa">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <svg width="40" height="20" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                                     </svg>
-                                    WhatsApp
+                                    Ватсап
                                 </a>
+				<a href="#" class="social-btn social-btn-max">
+    <svg width="40" height="20" viewBox="0 0 24 24" fill="currentColor">
+	<path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+		</svg>Макс
+  </a>
                             </div>
                         </div>
                         
@@ -190,22 +202,51 @@
                     <a href="photos.html">Фото</a>
                     <a href="contacts.html">Контакты</a>
                 </div>
-                <div class="footer-social">
-                    <a href="#" class="social-link" aria-label="Telegram">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link" aria-label="VK">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4 8.387 4 7.897c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.372 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.814-.542 1.27-1.422 2.18-3.61 2.18-3.61.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.474-.085.716-.576.716z"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link" aria-label="WhatsApp">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                        </svg>
-                    </a>
+               <div class="contact-info">
+<div class="contact-socials">
+                            <h3>Мы в соцсетях</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-btn social-btn-tg">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                    </svg>
+                                  
+                                </a>
+                                <a href="#" class="social-btn social-btn-vk">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4 8.387 4 7.897c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.372 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.814-.542 1.27-1.422 2.18-3.61 2.18-3.61.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.474-.085.716-.576.716z"/>
+                                    </svg>
+                                    
+                                </a>
+                                <a href="#" class="social-btn social-btn-wa">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                    </svg>
+                                    
+                                </a>
+
+
+ <a href="#" class="social-btn social-btn-max">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+	<path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+		</svg>
+  </a>
+</div>
+                            </div>
+                        </div>
+
+
+<script>
+  window.WAMM_W1_WidgetConfig = [
+	{ type: "WhatsApp", url: "https://wa.me/", id: "79082367173" },
+	{ type: "Telegram", url: "https://t.me/", id: "+dsnumwtADr43MWYy" },
+	{ type: "MAX", url: "https://avatars.mds.yandex.net/i?id=7adbd6db32a4bc4f8cd1d9f43a663e2d_l-5363193-images-thumbs&n=13 ", id: "https://avatars.mds.yandex.net/i?id=7adbd6db32a4bc4f8cd1d9f43a663e2d_l-5363193-images-thumbs&n=13" },
+	{ type: "VK", url: "https://vk.com/", id: "Magazin_I__love__sport" },
+	
+  ];
+</script>
+<script src="https://wamm.chat/widget/buttons" data-color="#FF8C00" data-size="large" data-position="bottom-left" data-theme="dark" data-show-on="all"></script>
+
                 </div>
             </div>
             <div class="footer-bottom">
@@ -215,5 +256,151 @@
     </footer>
 
     <script src="main.js"></script>
+	
+<!-- POPUP -->
+<div id="quizModal" class="modal">
+  <div class="modal-content">
+    
+    <!-- Кнопка закрытия -->
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <!-- Заголовок -->
+    <h2>Правила игры</h2>
+
+    <!-- Контент -->
+    <p>🧠 7 раундов по 10 вопросов</p>
+    <p>🎬 Вопросы про кино, сериалы и кинофраншизы</p>
+    <p>🍻 Перерывы между раундами</p>
+    <p>🏆 Призы победителям</p>
+    <p>👥 Команды от 2 до 8 человек</p>
+
+  </div>
+</div>
+	<script>
+function openModal() {
+  document.getElementById("quizModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("quizModal").style.display = "none";
+}
+
+/* Закрытие при клике вне окна */
+window.onclick = function(event) {
+  let modal = document.getElementById("quizModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+ <div class="modal" id="formModal">
+    <div class="modal-content">
+
+        <span class="modal-close" onclick="closeFormModal()">×</span>
+
+        <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                         
+                            <p class="form-subtitle">Заполните форму, и мы свяжемся с вами для подтверждения участия</p>
+                            
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" placeholder="Имя" required>
+                                <span class="form-error" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+                                <span class="form-error" id="phoneError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="game">Выберите игру</label>
+                                <select id="game" name="game" required>
+                                    <option value="">Выберите дату и тему</option>
+                                    <option value="1">4 июля. Фильмы Нон-стоп</option>
+                                    <option value="2">11 июля. Сериалы Нон-стоп</option>
+                                    
+                                </select>
+                                <span class="form-error" id="gameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="team">Название команды</label>
+                                <input type="text" id="team" name="team" placeholder="Команда друзей">
+                                <span class="form-hint">Оставьте пустым, если играете одни</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Комментарий</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Количество участников, особые пожелания..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Отправить заявку</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                                </svg>
+                            </button>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div class="form-success" id="formSuccess">
+                            <div class="success-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <h3>Заявка отправлена!</h3>
+                            <p>Мы свяжемся с вами в ближайшее время для подтверждения бронирования.</p>
+                            <button class="btn btn-secondary" id="resetForm">Отправить ещё одну заявку</button>
+                        </div>
+                    </div>
+
+    </div>
+</div>
+
+<script>
+function openFormModal() {
+    document.getElementById("formModal").style.display = "flex";
+}
+
+function closeFormModal() {
+    document.getElementById("formModal").style.display = "none";
+}
+
+// Закрытие при клике вне окна
+window.onclick = function(event) {
+    let modal = document.getElementById("formModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+    emailjs.init("F9iFUfmXGuPIR2Rmb"); // сюда вставь Public Key
+})();
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_1yb844g", "template_3hna77t", this)
+        .then(function() {
+            alert("Заявка отправлена!");
+        }, function(error) {
+            alert("Ошибка: " + JSON.stringify(error));
+        });
+});
+</script>
 </body>
 </html>
