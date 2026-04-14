@@ -50,8 +50,8 @@
             <a href="photos.html" class="mobile-nav-link">Фото</a>
             <a href="contacts.html" class="mobile-nav-link">Контакты</a>
 		<a class="nav-link">г. Нижний Новгород</a>
-		<a href="contacts2.html" class="btn btn-primary">
-                            <span>Записаться на игру</span>
+		<<a class="btn btn-primary btn-full" onclick="openFormModal()">
+                                <span>Записаться</span>
                             
                         </a>
         </nav>
@@ -69,7 +69,8 @@
 			<div class="hero-content">
                     
                     <h2 class="next-game-title">Игра, где начинается вечер</h2>
-                    <p class="hero-slogan"><a href="contacts2.html" class="btn btn-primary">
+                    <p class="hero-slogan">
+						<a class="btn btn-primary btn-full" onclick="openFormModal()">
                             <span>Записаться на игру</span>
                             
                         </a></p>
@@ -350,5 +351,114 @@ window.onclick = function(event) {
   }
 }
 </script>
+<div class="modal" id="formModal">
+    <div class="modal-content">
+
+        <span class="modal-close" onclick="closeFormModal()">×</span>
+
+        <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                         
+                            <p class="form-subtitle">Заполните форму, и мы свяжемся с вами для подтверждения участия</p>
+                            
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" placeholder="Имя" required>
+                                <span class="form-error" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+                                <span class="form-error" id="phoneError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="game">Выберите игру</label>
+                                <select id="game" name="game" required>
+                                    <option value="">Выберите дату и тему</option>
+                                    <option value="1">4 июля. Фильмы Нон-стоп</option>
+                                    <option value="2">11 июля. Сериалы Нон-стоп</option>
+                                    
+                                </select>
+                                <span class="form-error" id="gameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="team">Название команды</label>
+                                <input type="text" id="team" name="team" placeholder="Команда друзей">
+                                <span class="form-hint">Оставьте пустым, если играете одни</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Комментарий</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Количество участников, особые пожелания..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Отправить заявку</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                                </svg>
+                            </button>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div class="form-success" id="formSuccess">
+                            <div class="success-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <h3>Заявка отправлена!</h3>
+                            <p>Мы свяжемся с вами в ближайшее время для подтверждения бронирования.</p>
+                            <button class="btn btn-secondary" id="resetForm">Отправить ещё одну заявку</button>
+                        </div>
+                    </div>
+
+    </div>
+</div>
+
+<script>
+function openFormModal() {
+    document.getElementById("formModal").style.display = "flex";
+}
+
+function closeFormModal() {
+    document.getElementById("formModal").style.display = "none";
+}
+
+// Закрытие при клике вне окна
+window.onclick = function(event) {
+    let modal = document.getElementById("formModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+    emailjs.init("F9iFUfmXGuPIR2Rmb"); // сюда вставь Public Key
+})();
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_1yb844g", "template_3hna77t", this)
+        .then(function() {
+            alert("Заявка отправлена!");
+        }, function(error) {
+            alert("Ошибка: " + JSON.stringify(error));
+        });
+});
+</script>
+</body>
+</html>
 </body>
 </html>
