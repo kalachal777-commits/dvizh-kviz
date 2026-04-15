@@ -570,6 +570,7 @@ ul, ol {
     padding: 32px;
     max-width: 500px;
     margin: auto;
+	margin-bottom: 80px; /* расстояние вниз */
 }
 
 .next-game-badge {
