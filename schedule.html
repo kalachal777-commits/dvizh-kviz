@@ -585,7 +585,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 
     emailjs.sendForm("service_1yb844g", "template_3hna77t", this)
         .then(function() {
-            alert("Заявка отправлена!");
+         //   alert("Заявка отправлена!");
         }, function(error) {
             alert("Ошибка: " + JSON.stringify(error));
         });
