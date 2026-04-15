@@ -61,7 +61,13 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,0.7);
+
+    overflow-y: auto; /* ВАЖНО */
+    padding: 20px; /* чтобы не прилипало к краям */
 }
 
 /* Само окно */
@@ -70,11 +76,13 @@
   color: #fff;
   margin: 10% auto;
   padding: 30px;
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 0 30px #f56e00;
+ overflow-y: auto;
+max-height: 90vh; /* чтобы не вылазило */
 }
 
 /* Кнопка закрытия */
