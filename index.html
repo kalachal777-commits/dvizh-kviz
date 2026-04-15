@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Движ Квиз — Игра, где начинается вечер</title>
+    <title>Расписание игр — Движ Квиз</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Unbounded:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -45,13 +45,13 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <nav class="mobile-nav">
-            <a href="index.html" class="mobile-nav-link active">Главная</a>
-            <a href="schedule.html" class="mobile-nav-link">Расписание</a>
+            <a href="index.html" class="mobile-nav-link">Главная</a>
+            <a href="schedule.html" class="mobile-nav-link active">Расписание</a>
             <a href="photos.html" class="mobile-nav-link">Фото</a>
             <a href="contacts.html" class="mobile-nav-link">Контакты</a>
 		<a class="nav-link">г. Нижний Новгород</a>
-		<a class="btn btn-primary btn-full" onclick="openFormModal()">
-                                <span>Записаться</span>
+		<a href="contacts2.html" class="btn btn-primary">
+                            <span>Записаться на игру</span>
                             
                         </a>
         </nav>
@@ -307,13 +307,13 @@
 
                 </div>
             </div>
-            <<div class="footer-bottom">
+            <div class="footer-bottom">
                 <p>© 2026 Движ Квиз. Все права защищены.</p>
             </div>
         </div>
     </footer>
 
-    <script src="main.js"></script>
+ 
 	
 <!-- POPUP -->
 <div id="quizModal" class="modal">
@@ -455,12 +455,11 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 
     emailjs.sendForm("service_1yb844g", "template_3hna77t", this)
         .then(function() {
-            // alert("Заявка отправлена!");
+            
         }, function(error) {
             alert("Ошибка: " + JSON.stringify(error));
         });
 });
 </script>
 </body>
-</html>
 </html>
