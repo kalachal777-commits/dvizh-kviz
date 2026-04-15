@@ -307,7 +307,7 @@
 
                 </div>
             </div>
-            <div class="footer-bottom">
+            <<div class="footer-bottom">
                 <p>© 2026 Движ Квиз. Все права защищены.</p>
             </div>
         </div>
@@ -351,6 +351,7 @@ window.onclick = function(event) {
   }
 }
 </script>
+
 <div class="modal" id="formModal">
     <div class="modal-content">
 
@@ -379,7 +380,8 @@ window.onclick = function(event) {
                                     <option value="">Выберите дату и тему</option>
                                     <option value="1">4 июля. Фильмы Нон-стоп</option>
                                     <option value="2">11 июля. Сериалы Нон-стоп</option>
-                                    
+                                    <option value="2">18 июля. Кино 90-х. Поп-культура</option>
+					<option value="2">25 июля. Киновселенная Марвел</option>
                                 </select>
                                 <span class="form-error" id="gameError"></span>
                             </div>
@@ -440,6 +442,7 @@ window.onclick = function(event) {
 </script>
 
 <script src="main.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
@@ -452,7 +455,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 
     emailjs.sendForm("service_1yb844g", "template_3hna77t", this)
         .then(function() {
-           // alert("Заявка отправлена!");
+            // alert("Заявка отправлена!");
         }, function(error) {
             alert("Ошибка: " + JSON.stringify(error));
         });
@@ -460,5 +463,4 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 </script>
 </body>
 </html>
-</body>
 </html>
