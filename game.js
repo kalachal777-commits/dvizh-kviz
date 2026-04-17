@@ -1,12 +1,6 @@
 const questions = [
     // ЧАСТЬ 1 — ВЫБОР ОТВЕТА (1 балл)
-    { 
-        q: "🖼 Из какого фильма этот отрывок?", 
-        type: "input", 
-        correct: "Шпион", 
-        points: 4, 
-        media: "https://youtu.be/nmjl_0GvArg" 
-    },
+    
     { q: "Кто должен был сыграть Нео в «Матрице», но отказался?", type: "choice", options: ["Брэд Питт", "Уилл Смит", "Джонни Депп", "Том Круз"], correct: "Уилл Смит", points: 1 },
     { q: "Какой фильм НЕ получил «Оскар» за лучший фильм?", type: "choice", options: ["Гладиатор", "Титаник", "Начало", "Властелин колец"], correct: "Начало", points: 1 },
     { q: "Какой фильм Квентина Тарантино вышел первым?", type: "choice", options: ["Бешеные псы", "Криминальное чтиво", "Джеки Браун", "Убить Билла"], correct: "Бешеные псы", points: 1 },
@@ -20,7 +14,7 @@ const questions = [
         type: "input", 
         correct: "Шпион", 
         points: 4, 
-        media: "https://youtu.be/nmjl_0GvArg" 
+        media: "shpion.mp4" 
     },
     { 
         q: "🎥 Какого персонажа преобразила нейросеть?", 
@@ -60,7 +54,6 @@ const timerDisplay = document.getElementById('timer');
 const startGameBtn = document.getElementById('start-game-btn');
 const timerDiv = document.getElementById('timer');
 
-// Подготовка страницы при загрузке
 function initQuiz() {
     currentQuestionIndex = 0;
     score = 0;
@@ -71,7 +64,6 @@ function initQuiz() {
     timerDiv.classList.add('hide');
 }
 
-// Запуск по кнопке "Начать игру"
 function startActualGame() {
     startGameBtn.classList.add('hide');
     timerDiv.classList.remove('hide');
@@ -86,12 +78,34 @@ function showQuestion() {
     let q = questions[currentQuestionIndex];
     questionText.innerText = q.q;
 
-    // Отображение медиа (если ссылка на YouTube, лучше использовать iframe, но пока оставляем img как в твоем коде)
-    if(q.media) {
-        document.getElementById('media-container').innerHTML = `<img src="${q.media}" style="max-width:100%; border-radius:15px;">`;
-    } else {
-        document.getElementById('media-container').innerHTML = '';
+    const mediaContainer = document.getElementById('media-container');
+    mediaContainer.innerHTML = ''; 
+
+    if (q.media) {
+        const isYoutube = q.media.includes('youtube.com') || q.media.includes('youtu.be');
+        const isVK = q.media.includes('vkvideo.ru') || q.media.includes('vk.com');
+        const isMP4 = q.media.toLowerCase().endsWith('.mp4'); // Проверка на формат файла
+
+        if (isYoutube || isVK) {
+            // Видео с хостингов
+            mediaContainer.innerHTML = `
+                <div class="video-responsive" style="margin-bottom: 20px;">
+                    <iframe src="${q.media}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen 
+                        style="width:100%; aspect-ratio: 16/9; border-radius:15px;"></iframe>
+                </div>`;
+        } else if (isMP4) {
+            // Локальное видео MP4
+            mediaContainer.innerHTML = `
+                <video controls autoplay playsinline style="width:100%; border-radius:15px; margin-bottom: 20px;">
+                    <source src="${q.media}" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>`;
+        } else {
+            // Обычная картинка
+            mediaContainer.innerHTML = `<img src="${q.media}" style="max-width:100%; border-radius:15px; margin-bottom: 20px;">`;
+        }
     }
+    // ... остальной код функции (кнопки, таймер) без изменений
 
     if (q.type === "choice") {
         answerButtons.classList.remove('hide');
@@ -110,7 +124,7 @@ function showQuestion() {
 }
 
 function startTimer() {
-    timeLeft = 30; // Установил 30 секунд, как в твоем коде
+    timeLeft = 30;
     timerDisplay.innerText = `Осталось: ${timeLeft} сек`;
     timerInterval = setInterval(() => {
         timeLeft--;
@@ -145,10 +159,9 @@ function checkAnswer(userAnswer) {
 
     if (isCorrect) score += q.points;
 
-    // Используем цвета из CSS (правильный/неправильный)
     correctText.innerHTML = isCorrect ? 
         `<span style="color:#22c55e">Верно! +${q.points} баллов</span>` : 
-        `<span style="color:#ef4444">Неверно. Правильный ответ: ${q.correct}</span>`;
+        `<span style="color:#ef4444">Неверно. Ответ: ${q.correct}</span>`;
     
     feedback.classList.remove('hide');
 }
@@ -172,10 +185,8 @@ function showResults() {
     const res = document.getElementById('result-container');
     res.classList.remove('hide');
     
-    // Динамический текст в зависимости от результата
     let message = score > 10 ? "Отличный результат!" : "Неплохо, но можно лучше!";
     document.getElementById('score-text').innerHTML = `<h3>${message}</h3><p>Вы набрали <strong>${score}</strong> баллов.</p>`;
 }
 
-// Вызов инициализации при загрузке
 initQuiz();
