@@ -1,12 +1,6 @@
 const questions = [
     // ЧАСТЬ 1 — ВЫБОР ОТВЕТА (1 балл)
-    { 
-        q: "🖼 Из какого фильма этот отрывок?", 
-        type: "input", 
-        correct: "Шпион", 
-        points: 4, 
-        media: "Shpion.mp4" 
-    },    
+    
     { q: "Кто должен был сыграть Нео в «Матрице», но отказался?", type: "choice", options: ["Брэд Питт", "Уилл Смит", "Джонни Депп", "Том Круз"], correct: "Уилл Смит", points: 1 },
     { q: "Какой фильм НЕ получил «Оскар» за лучший фильм?", type: "choice", options: ["Гладиатор", "Титаник", "Начало", "Властелин колец"], correct: "Начало", points: 1 },
     { q: "Какой фильм Квентина Тарантино вышел первым?", type: "choice", options: ["Бешеные псы", "Криминальное чтиво", "Джеки Браун", "Убить Билла"], correct: "Бешеные псы", points: 1 },
@@ -37,6 +31,13 @@ const questions = [
         points: 4, 
         media: "https://images.squarespace-cdn.com/content/v1/5ddbea8fe7b0381e7563251a/1695307902718-NRMDGQILSC49K6QYH4WY/jonathan-olley-the-batman-colin-farrell-warner-bros-unit-stills-movie-film-stills-photography_14.jpg" 
     }
+        { 
+        q: "🖼 Из какого фильма этот отрывок?", 
+        type: "input", 
+        correct: "Шпион", 
+        points: 4, 
+        media: "Shpion.mp4" 
+    },
 ];
 
 let currentQuestionIndex = 0;
