@@ -14,7 +14,7 @@ const questions = [
         type: "input", 
         correct: "Шпион", 
         points: 4, 
-        media: "shpion.mp4" 
+        media: "Shpion.mp4" 
     },
     { 
         q: "🎥 Какого персонажа преобразила нейросеть?", 
