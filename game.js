@@ -9,7 +9,13 @@ const questions = [
     { q: "Сериал: парк развлечений, андроиды, восстание машин, философия сознания.", type: "choice", options: ["Одна из многих", "Мир дикого запада", "Ходячие мертвецы", "Остаться в живых"], correct: "Мир дикого запада", points: 1 },
 
     // ЧАСТЬ 4 — ФОТО/ВИДЕО (4 балла)
-
+    { 
+        q: "🖼 Из какого фильма этот отрывок?", 
+        type: "input", 
+        correct: "Шпион", 
+        points: 4, 
+        media: "shpion.mp4" 
+    },
     { 
         q: "🎥 Какого персонажа преобразила нейросеть?", 
         type: "input", 
@@ -31,13 +37,6 @@ const questions = [
         points: 4, 
         media: "https://images.squarespace-cdn.com/content/v1/5ddbea8fe7b0381e7563251a/1695307902718-NRMDGQILSC49K6QYH4WY/jonathan-olley-the-batman-colin-farrell-warner-bros-unit-stills-movie-film-stills-photography_14.jpg" 
     }
-        { 
-        q: "🖼 Из какого фильма этот отрывок?", 
-        type: "input", 
-        correct: "Шпион", 
-        points: 4, 
-        media: "Shpion.mp4" 
-    },
 ];
 
 let currentQuestionIndex = 0;
