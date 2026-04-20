@@ -25,6 +25,7 @@
             </a>
             <nav class="nav" id="nav">
                 <a href="index.html" class="nav-link">Главная</a>
+		<a href="game.html" class="nav-link">Движ Квиз DEMO</a>
                 <a href="schedule.html" class="nav-link">Расписание</a>
                 <a href="photos.html" class="nav-link active">Фото</a>
                 <a href="contacts.html" class="nav-link">Контакты</a>
@@ -46,6 +47,7 @@
     <div class="mobile-menu" id="mobileMenu">
         <nav class="mobile-nav">
             <a href="index.html" class="mobile-nav-link">Главная</a>
+		<a href="game.html" class="mobile-nav-link">Движ Квиз DEMO</a>
             <a href="schedule.html" class="mobile-nav-link">Расписание</a>
             <a href="photos.html" class="mobile-nav-link active">Фото</a>
             <a href="contacts.html" class="mobile-nav-link">Контакты</a>
@@ -266,11 +268,15 @@
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Движ Квиз. Все права защищены.</p>
+		
+   		<a href="privacy.html" target="_blank">Политикой конфиденциальности</a>
+		
             </div>
+		
         </div>
     </footer>
 
-    <script src="main.js"></script>
+ 
 	
 <!-- POPUP -->
 <div id="quizModal" class="modal">
@@ -280,14 +286,20 @@
     <span class="close" onclick="closeModal()">&times;</span>
 
     <!-- Заголовок -->
-    <h2>Правила игры</h2>
+    <h2 class="title-gradient">Движ Квиз Правила</h2>
 
     <!-- Контент -->
-    <p>🧠 7 раундов по 10 вопросов</p>
-    <p>🎬 Вопросы про кино, сериалы и кинофраншизы</p>
-    <p>🍻 Перерывы между раундами</p>
-    <p>🏆 Призы победителям</p>
-    <p>👥 Команды от 2 до 8 человек</p>
+    <p>🧠 6-10 раундов по 10 вопросов</h2>
+	<p>-------------------------------------------</p>
+    <p>🎬 Вопросы про кино, сериалы, мемы, мультфильмы, кинофраншизы, на логику и воображение.<p>
+	<p>-------------------------------------------</p>
+    <p>🍻 Перерывы между раундами, в которых вы сможете поучаствовать в конкурсах, пофоткаться, заказать себе напитки и еду</p>
+	<p>-------------------------------------------</p>
+    <p>🏆 Призы победителям - сертификаты и проходки на игры, шампанское, вкуснейшие блюда от заведения</p>
+	<p>-------------------------------------------</p>
+    <p>👥 Команды от 2 до 8 человек</h2>
+	<p>-------------------------------------------</p>
+	  <p>☄️ Выбирай удобную дату, интересную тему и добро пожаловать на Движ Квиз!</p>
 
   </div>
 </div>
@@ -309,8 +321,7 @@ window.onclick = function(event) {
 }
 </script>
 
-
- <div class="modal" id="formModal">
+<div class="modal" id="formModal">
     <div class="modal-content">
 
         <span class="modal-close" onclick="closeFormModal()">×</span>
@@ -338,7 +349,8 @@ window.onclick = function(event) {
                                     <option value="">Выберите дату и тему</option>
                                     <option value="1">4 июля. Фильмы Нон-стоп</option>
                                     <option value="2">11 июля. Сериалы Нон-стоп</option>
-                                    
+                                    <option value="2">18 июля. Кино 90-х. Поп-культура</option>
+					<option value="2">25 июля. Киновселенная Марвел</option>
                                 </select>
                                 <span class="form-error" id="gameError"></span>
                             </div>
@@ -361,6 +373,10 @@ window.onclick = function(event) {
                                     <polygon points="22 2 15 22 11 13 2 9 22 2"/>
                                 </svg>
                             </button>
+				<div class="privacy-agreement">
+    Нажимая кнопку, вы соглашаетесь с 
+    <a href="privacy.html" target="_blank">Политикой конфиденциальности</a>
+</div>
                         </form>
 
                         <!-- Success Message -->
@@ -398,7 +414,8 @@ window.onclick = function(event) {
 }
 </script>
 
-<script src="main.js"></script>
+
+
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
@@ -411,11 +428,21 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 
     emailjs.sendForm("service_1yb844g", "template_3hna77t", this)
         .then(function() {
-          //  alert("Заявка отправлена!");
+            
         }, function(error) {
             alert("Ошибка: " + JSON.stringify(error));
         });
 });
 </script>
+
+		<div id="cookie-notice" class="cookie-notice hide">
+    <div class="cookie-content">
+        <p>Мы используем файлы cookie, чтобы улучшить работу сайта. Продолжая использовать сайт, вы соглашаетесь с 
+           <a href="privacy.html" target="_blank">Политикой конфиденциальности</a>.</p>
+        <button id="accept-cookies" class="cookie-btn">Принять</button>
+    </div>
+</div>
+
+<script src="main.js"></script>		
 </body>
 </html>
