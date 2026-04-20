@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Расписание игр — Движ Квиз</title>
+    <title>Главная — Движ Квиз</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Unbounded:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -46,9 +46,9 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <nav class="mobile-nav">
-            <a href="index.html" class="mobile-nav-link">Главная</a>
-		<a href="game.html" class="nav-link">Движ Квиз DEMO</a>
-            <a href="schedule.html" class="mobile-nav-link active">Расписание</a>
+            <a href="index.html" class="mobile-nav-link active">Главная</a>
+		<a href="game.html" class="mobile-nav-link">Движ Квиз DEMO</a>
+            <a href="schedule.html" class="mobile-nav-link">Расписание</a>
             <a href="photos.html" class="mobile-nav-link">Фото</a>
             <a href="contacts.html" class="mobile-nav-link">Контакты</a>
 		<a class="nav-link">г. Нижний Новгород</a>
@@ -81,14 +81,15 @@
                 </button></p>
 
 			<p class="hero-slogan">
-			<a href="game.html" class="nav-link active">
-                    Мини Игра
-                </a></p>
-						
+			<a href="game.html" class="btn btn-primary"; margin-bottom: 40px">
+                            <span>Попробуй Движ Квиз DEMO</span>
+			</a></p>
+
+			<p class="hero-slogan">
 			<a class="btn btn-primary btn-full" onclick="openFormModal()">
                                 <span>Записаться на игру</span>
                             
-                        </a>
+                        </a></p>
                     
                     <!-- Countdown Timer -->
                     <div class="countdown-wrapper">
@@ -261,6 +262,7 @@
                     <a href="schedule.html">Расписание</a>
                     <a href="photos.html">Фото</a>
                     <a href="contacts.html">Контакты</a>
+			
                 </div>
                <div class="contact-info">
 <div class="contact-socials">
@@ -310,8 +312,14 @@
                 </div>
             </div>
             <div class="footer-bottom">
+
+
                 <p>© 2026 Движ Квиз. Все права защищены.</p>
+		
+   		<a href="privacy.html" target="_blank">Политикой конфиденциальности</a>
+		
             </div>
+		
         </div>
     </footer>
 
@@ -412,6 +420,10 @@ window.onclick = function(event) {
                                     <polygon points="22 2 15 22 11 13 2 9 22 2"/>
                                 </svg>
                             </button>
+				<div class="privacy-agreement">
+    Нажимая кнопку, вы соглашаетесь с 
+    <a href="privacy.html" target="_blank">Политикой конфиденциальности</a>
+</div>
                         </form>
 
                         <!-- Success Message -->
@@ -449,7 +461,7 @@ window.onclick = function(event) {
 }
 </script>
 
-<script src="main.js"></script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
@@ -469,5 +481,15 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
         });
 });
 </script>
+
+		<div id="cookie-notice" class="cookie-notice hide">
+    <div class="cookie-content">
+        <p>Мы используем файлы cookie, чтобы улучшить работу сайта. Продолжая использовать сайт, вы соглашаетесь с 
+           <a href="privacy.html" target="_blank">Политикой конфиденциальности</a>.</p>
+        <button id="accept-cookies" class="cookie-btn">Принять</button>
+    </div>
+</div>
+
+<script src="main.js"></script>		
 </body>
 </html>
