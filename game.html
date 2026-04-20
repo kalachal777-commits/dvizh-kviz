@@ -47,8 +47,8 @@
     <div class="mobile-menu" id="mobileMenu">
         <nav class="mobile-nav">
             <a href="index.html" class="mobile-nav-link">Главная</a>
-		<a href="game.html" class="nav-link active">Движ Квиз DEMO</a>
-            <a href="schedule.html" class="mobile-nav-link active">Расписание</a>
+		<a href="game.html" class="mobile-nav-link active">Движ Квиз DEMO</a>
+            <a href="schedule.html" class="mobile-nav-link">Расписание</a>
             <a href="photos.html" class="mobile-nav-link">Фото</a>
             <a href="contacts.html" class="mobile-nav-link">Контакты</a>
 		<a class="nav-link">г. Нижний Новгород</a>
@@ -184,7 +184,11 @@
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Движ Квиз. Все права защищены.</p>
+		
+   		<a href="privacy.html" target="_blank">Политикой конфиденциальности</a>
+		
             </div>
+		
         </div>
     </footer>
 
@@ -285,6 +289,10 @@ window.onclick = function(event) {
                                     <polygon points="22 2 15 22 11 13 2 9 22 2"/>
                                 </svg>
                             </button>
+				<div class="privacy-agreement">
+    Нажимая кнопку, вы соглашаетесь с 
+    <a href="privacy.html" target="_blank">Политикой конфиденциальности</a>
+</div>
                         </form>
 
                         <!-- Success Message -->
@@ -322,7 +330,7 @@ window.onclick = function(event) {
 }
 </script>
 
-<script src="main.js"></script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
@@ -342,5 +350,15 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
         });
 });
 </script>
+
+		<div id="cookie-notice" class="cookie-notice hide">
+    <div class="cookie-content">
+        <p>Мы используем файлы cookie, чтобы улучшить работу сайта. Продолжая использовать сайт, вы соглашаетесь с 
+           <a href="privacy.html" target="_blank">Политикой конфиденциальности</a>.</p>
+        <button id="accept-cookies" class="cookie-btn">Принять</button>
+    </div>
+</div>
+
+<script src="main.js"></script>		
 </body>
 </html>
