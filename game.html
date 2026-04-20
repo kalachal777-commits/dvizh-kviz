@@ -178,11 +178,13 @@
 	
   ];
 </script>
-<script src="https://wamm.chat/widget/buttons" data-color="#FF8C00" data-size="large" data-position="bottom-left" data-theme="dark" data-show-on="all"></script>
+<script src="https://wamm.chat/widget/buttons" data-color="#FF8C00" data-size="small" data-position="bottom-right" data-theme="dark" data-show-on="all"></script>
 
                 </div>
             </div>
             <div class="footer-bottom">
+
+
                 <p>© 2026 Движ Квиз. Все права защищены.</p>
 		
    		<a href="privacy.html" target="_blank">Политикой конфиденциальности</a>
@@ -289,10 +291,16 @@ window.onclick = function(event) {
                                     <polygon points="22 2 15 22 11 13 2 9 22 2"/>
                                 </svg>
                             </button>
-				<div class="privacy-agreement">
-    Нажимая кнопку, вы соглашаетесь с 
-    <a href="privacy.html" target="_blank">Политикой конфиденциальности</a>
-</div>
+				<div class="privacy-checkbox-wrapper">
+    				<label class="checkbox-container">
+        				<input type="checkbox" id="privacy-check" required>
+        				<span class="checkmark"></span>
+        				<span class="checkbox-text">
+           					 Я даю <a href="agreement.html" target="_blank">согласие на обработку данных</a> 
+           						 и принимаю <a href="privacy.html" target="_blank">политику конфиденциальности</a>
+        				</span>
+    				</label>
+				</div>
                         </form>
 
                         <!-- Success Message -->
@@ -334,22 +342,6 @@ window.onclick = function(event) {
 
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-<script>
-(function(){
-    emailjs.init("F9iFUfmXGuPIR2Rmb"); // сюда вставь Public Key
-})();
-
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    emailjs.sendForm("service_1yb844g", "template_3hna77t", this)
-        .then(function() {
-            
-        }, function(error) {
-            alert("Ошибка: " + JSON.stringify(error));
-        });
-});
-</script>
 
 		<div id="cookie-notice" class="cookie-notice hide">
     <div class="cookie-content">
