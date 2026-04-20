@@ -361,3 +361,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const cookieNotice = document.getElementById('cookie-notice');
+    const acceptBtn = document.getElementById('accept-cookies');
+
+    // Проверяем, давал ли пользователь согласие ранее
+    if (!localStorage.getItem('cookiesAccepted')) {
+        cookieNotice.classList.remove('hide');
+    }
+
+    // Обработчик клика по кнопке
+    acceptBtn.addEventListener('click', function() {
+        localStorage.setItem('cookiesAccepted', 'true'); // Сохраняем отметку
+        cookieNotice.classList.add('hide'); // Скрываем уведомление
+    });
+});
