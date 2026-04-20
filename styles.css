@@ -1883,3 +1883,87 @@ opacity: 1 !important;
     height: 100% !important;
     pointer-events: auto !important; /* Разрешаем клики */
 }
+
+.privacy-agreement {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.6); /* Полупрозрачный белый цвет */
+    text-align: center;
+}
+
+.privacy-agreement a {
+    color: #ff8c00; /* Твой акцентный оранжевый цвет */
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 140, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.privacy-agreement a:hover {
+    border-bottom-color: #ff8c00;
+    color: #ffa500;
+}
+
+
+.cookie-notice {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 600px;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #333;
+}
+
+.cookie-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cookie-content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.cookie-content a {
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+.cookie-btn {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: background 0.3s;
+}
+
+.cookie-btn:hover {
+    background-color: #e67e00;
+}
+
+/* Класс для скрытия */
+.hide {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    .cookie-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
