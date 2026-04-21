@@ -2,7 +2,7 @@ const CACHE_NAME = 'dvizh-kviz-v1';
 const ASSETS = [
   'index.html',
   'main.js',
-  'logo1.png'
+  'logo11.png'
 ];
 
 // Установка и кэширование ресурсов
